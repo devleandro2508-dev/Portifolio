@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Leandro Chagas - Projetos</title>
     <link rel="stylesheet" href="index.css">
+
     <style>
         .ponto {
             display: inline-block;
@@ -16,11 +19,55 @@
             margin-right: 8px;
             vertical-align: middle;
         }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin: 30px 0;
+        }
+
+        .project-card {
+            background-color: #151515;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ECB4E;
+        }
+
+        .project-card h3 {
+            color: #4ECB4E;
+            margin-top: 0;
+        }
+
+        .project-card p {
+            line-height: 1.7;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #78DD78;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+
         <nav>
             <ul>
                 <li>
@@ -38,33 +85,95 @@
         <header>
             <div class="center">
                 <h1>Meus Projetos</h1>
-                <h2>Confira alguns dos trabalhos que venho desenvolvendo</h2>
+                <h2>
+                    Confira alguns dos trabalhos
+                    que venho desenvolvendo
+                </h2>
             </div>
         </header>
 
         <main>
             <section class="projects-grid">
 
+                <!-- Desafio Recife -->
                 <div class="project-card">
-                    <h3><span class="ponto"></span>Desafio Recife</h3>
-                    <p>Página desenvolvida em HTML e CSS puros, apresentando a cidade do Recife: cultura, pontos turísticos e comidas típicas. Deploy feito via GitHub e Vercel.</p>
-                    <a href="https://desafio-recife.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver projeto →</a>
+                    <h3>
+                        <span class="ponto"></span>
+                        Desafio Recife
+                    </h3>
+
+                    <p>
+                        Página desenvolvida em HTML e CSS
+                        puros, apresentando a cidade do
+                        Recife: cultura, pontos turísticos
+                        e comidas típicas. Deploy feito
+                        via GitHub e Vercel.
+                    </p>
+
+                    <a
+                        href="https://desafio-recife.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        Ver projeto →
+                    </a>
+                </div>
+
+                <!-- LC Systems -->
+                <div class="project-card">
+                    <h3>
+                        <span class="ponto"></span>
+                        LC Systems 🚀
+                    </h3>
+
+                    <p>
+                        Lançamento oficial da LC Systems,
+                        minha iniciativa empreendedora
+                        voltada ao desenvolvimento de
+                        software, inovação e soluções
+                        tecnológicas para empresas.
+                    </p>
+
+                    <p>
+                        Compartilhei no LinkedIn o início
+                        dessa nova etapa da minha
+                        trajetória profissional.
+                    </p>
+
+                    <a
+                        href="https://www.linkedin.com/feed/update/urn:li:activity:7523130002750742528/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        Ver publicação no LinkedIn →
+                    </a>
                 </div>
 
             </section>
         </main>
 
         <footer>
-            <a href="https://github.com/devleandro2508-dev" target="_blank" rel="noopener noreferrer">
+            <a
+                href="https://github.com/devleandro2508-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src="./img/github.svg" alt="GitHub">
                 <p>GitHub</p>
             </a>
-            <a href="https://www.linkedin.com/in/leandro-chagas2508" target="_blank" rel="noopener noreferrer">
+
+            <a
+                href="https://www.linkedin.com/in/leandro-chagas2508"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img src="./img/linkedin.svg" alt="LinkedIn">
                 <p>LinkedIn</p>
             </a>
         </footer>
+
     </div>
 </body>
-
 </html>
